@@ -88,7 +88,7 @@ export default class HomeScreen extends Component {
           }" style="width: 700px; height: auto; margin: 0 auto; display: inline-block;">
           <h1>Quotation for ${this.state.titleValue}</h1>
           <h4 style="font-size: 16px; text-align: right;">${this._genDate()}</h4>
-          <p style="font-size: 20px; line-height: 16px;">${this.state.textValue.toString()}</p>
+          <p style="font-size: 20px; line-height: 16px;">${this.state.textValue.replace(/\r?\n/g,'<br/>')}</p>
       `,
           fileName:
             'quotation_' +
